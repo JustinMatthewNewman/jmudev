@@ -18,7 +18,7 @@ interface ListingInfoProps {
   description: string;
   guestCount: number;
   roomCount: number;
-  bathroomCount: number;
+  tutorCount: number;
   category: {
     icon: IconType,
     label: string;
@@ -32,7 +32,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
   description,
   guestCount,
   roomCount,
-  bathroomCount,
+  tutorCount,
   category,
   locationValue,
 }) => {
@@ -72,7 +72,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
             {roomCount} rooms
           </div>
           <div>
-            {bathroomCount} bathrooms
+            {tutorCount} Tutors
           </div>
         </div>
       </div>

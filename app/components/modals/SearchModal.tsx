@@ -33,7 +33,7 @@ const SearchModal = () => {
   const [location, setLocation] = useState<CountrySelectValue>();
   const [guestCount, setGuestCount] = useState(1);
   const [roomCount, setRoomCount] = useState(1);
-  const [bathroomCount, setBathroomCount] = useState(1);
+  const [tutorCount, settutorCount] = useState(1);
   const [dateRange, setDateRange] = useState<Range>({
     startDate: new Date(),
     endDate: new Date(),
@@ -68,7 +68,7 @@ const SearchModal = () => {
       locationValue: location?.value,
       guestCount,
       roomCount,
-      bathroomCount
+      tutorCount
     };
 
     if (dateRange.startDate) {
@@ -97,7 +97,7 @@ const SearchModal = () => {
     roomCount,
     dateRange,
     onNext,
-    bathroomCount,
+    tutorCount,
     params
   ]);
 
@@ -120,7 +120,7 @@ const SearchModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Where do you wanna go?"
+        title="Where do you wanna learn?"
         subtitle="Find the perfect location!"
       />
       <CountrySelect 
@@ -171,11 +171,11 @@ const SearchModal = () => {
         <hr />
         <Counter 
           onChange={(value) => {
-            setBathroomCount(value)
+            settutorCount(value)
           }}
-          value={bathroomCount}
-          title="Bathrooms"
-          subtitle="How many bahtrooms do you need?"
+          value={tutorCount}
+          title="Tutors"
+          subtitle="How many tutors do you need?"
         />
       </div>
     )

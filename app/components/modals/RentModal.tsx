@@ -53,7 +53,7 @@ const RentModal = () => {
       location: null,
       guestCount: 1,
       roomCount: 1,
-      bathroomCount: 1,
+      tutorCount: 1,
       imageSrc: '',
       price: 1,
       title: '',
@@ -65,7 +65,7 @@ const RentModal = () => {
   const category = watch('category');
   const guestCount = watch('guestCount');
   const roomCount = watch('roomCount');
-  const bathroomCount = watch('bathroomCount');
+  const tutorCount = watch('tutorCount');
   const imageSrc = watch('imageSrc');
 
   const Map = useMemo(() => dynamic(() => import('../Map'), { 
@@ -197,9 +197,9 @@ const RentModal = () => {
         />
         <hr />
         <Counter 
-          onChange={(value) => setCustomValue('bathroomCount', value)}
-          value={bathroomCount}
-          title="Bathrooms" 
+          onChange={(value) => setCustomValue('tutorCount', value)}
+          value={tutorCount}
+          title="Tutors" 
           subtitle="How many degrees/certifications do you have?"
         />
       </div>
@@ -254,7 +254,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          subtitle="How much do you charge per hour?"
         />
         <Input
           id="price"
