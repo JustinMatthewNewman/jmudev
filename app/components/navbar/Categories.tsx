@@ -23,72 +23,72 @@ import Container from '../Container';
 
 export const categories = [
   {
-    label: 'Beach',
+    label: 'Programming',
     icon: TbBeach,
-    description: 'This property is close to the beach!',
+    description: 'This property is programming!',
   },
   {
-    label: 'Windmills',
+    label: 'Math',
     icon: GiWindmill,
-    description: 'This property is has windmills!',
+    description: 'This property is has Math!',
   },
   {
-    label: 'Modern',
+    label: 'Languages',
     icon: MdOutlineVilla,
-    description: 'This property is modern!'
+    description: 'This property is Langs!'
   },
   {
-    label: 'Countryside',
+    label: 'Art',
     icon: TbMountain,
-    description: 'This property is in the countryside!'
+    description: 'This property is art!'
   },
   {
-    label: 'Pools',
+    label: 'Music',
     icon: TbPool,
-    description: 'This is property has a beautiful pool!'
+    description: 'This is property has a beautful song!'
   },
   {
-    label: 'Islands',
+    label: 'Sports',
     icon: GiIsland,
-    description: 'This property is on an island!'
+    description: 'This property is on sports!'
   },
   {
-    label: 'Lake',
+    label: 'Skill/Trade',
     icon: GiBoatFishing,
-    description: 'This property is near a lake!'
+    description: 'This property is near a skill!'
   },
   {
-    label: 'Skiing',
+    label: 'Travel',
     icon: FaSkiing,
-    description: 'This property has skiing activies!'
+    description: 'This property has Travel!'
   },
   {
-    label: 'Castles',
+    label: 'Writing',
     icon: GiCastle,
     description: 'This property is an ancient castle!'
   },
   {
-    label: 'Caves',
+    label: 'Resume',
     icon: GiCaveEntrance,
-    description: 'This property is in a spooky cave!'
+    description: 'This property is resume workshops!'
   },
   {
-    label: 'Camping',
+    label: 'Interviews',
     icon: GiForestCamp,
-    description: 'This property offers camping activities!'
+    description: 'This property offers activities!'
   },
   {
-    label: 'Arctic',
+    label: 'WebDev',
     icon: BsSnow,
     description: 'This property is in arctic environment!'
   },
   {
-    label: 'Desert',
+    label: 'Courses',
     icon: GiCactus,
     description: 'This property is in the desert!'
   },
   {
-    label: 'Barns',
+    label: 'Personal',
     icon: GiBarn,
     description: 'This property is in a barn!'
   },
