@@ -58,7 +58,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             cursor-pointer
           "
         >
-          JmuDev your home
+          +Tutor
         </div>
         <div 
         onClick={toggleOpen}
