@@ -44,10 +44,10 @@ const Search = () => {
 
   const guestLabel = useMemo(() => {
     if (guestCount) {
-      return `${guestCount} Guests`;
+      return `${guestCount} Students`;
     }
 
-    return 'Add Guests';
+    return 'Add Students';
   }, [guestCount]);
 
   return ( 

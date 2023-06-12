@@ -164,7 +164,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Where is your place located?"
-          subtitle="Help guests find you!"
+          subtitle="Help Students find you!"
         />
         <CountrySelect 
           value={location} 
@@ -185,8 +185,8 @@ const RentModal = () => {
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
-          title="Guests" 
-          subtitle="How many guests do you allow?"
+          title="Students" 
+          subtitle="How many Students do you allow?"
         />
         <hr />
         <Counter 
@@ -211,7 +211,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
+          subtitle="Show Students what your place looks like!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
