@@ -70,6 +70,8 @@ const ListingCard: React.FC<ListingCardProps> = ({
     return `${format(start, 'PP')} - ${format(end, 'PP')}`;
   }, [reservation]);
 
+  console.log(data)
+
   return (
     <div 
       onClick={() => router.push(`/listings/${data.id}`)} 
@@ -109,7 +111,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           </div>
         </div>
         <div className="font-semibold text-lg">
-          {location?.region}, {location?.label}
+          {data.title}
         </div>
         <div className="font-light text-neutral-500">
           {reservationDate || data.category}
