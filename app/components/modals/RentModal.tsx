@@ -131,7 +131,7 @@ const RentModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Which of these best describes your lesson?"
+        title="Which of these best describes your place?"
         subtitle="Pick a category"
       />
       <div 
@@ -163,7 +163,7 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Where is your lesson located?"
+          title="Where is your place located?"
           subtitle="Help Students find you!"
         />
         <CountrySelect 
@@ -179,8 +179,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Share some basics about your lesson plan"
-          subtitle="What skills do you have?"
+          title="Share some basics about your place"
+          subtitle="What amenitis do you have?"
         />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
@@ -200,7 +200,7 @@ const RentModal = () => {
           onChange={(value) => setCustomValue('bathroomCount', value)}
           value={bathroomCount}
           title="Bathrooms" 
-          subtitle="How many degrees/certifications do you have?"
+          subtitle="How many bathrooms do you have?"
         />
       </div>
     )
@@ -210,8 +210,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Add a photo of your lesson"
-          subtitle="Show Students what your lesson looks like!"
+          title="Add a photo of your place"
+          subtitle="Show Students what your place looks like!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -225,7 +225,7 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="How would you describe your lesson?"
+          title="How would you describe your place?"
           subtitle="Short and sweet works best!"
         />
         <Input

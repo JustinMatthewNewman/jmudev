@@ -1,8 +1,6 @@
 import Container from "@/app/components/Container";
 import ListingCard from "@/app/components/listings/ListingCard";
 import EmptyState from "@/app/components/EmptyState";
-import { Analytics } from '@vercel/analytics/react';
-
 
 import getListings, { 
   IListingsParams
@@ -30,7 +28,6 @@ const Home = async ({ searchParams }: HomeProps) => {
 
   return (
     <ClientOnly>
-      <Analytics/>
       <Container>
         <div 
           className="
