@@ -21,7 +21,7 @@ Features:
 - Owner reservation cancellation
 - Creation and deletion of properties
 - Pricing calculation
-- Advanced search algorithm by category, date range, map location, number of Students, rooms and Tutors
+- Advanced search algorithm by category, date range, map location, number of Students, rooms and bathrooms
     - For example we will filter out properties that have a reservation in your desired date range to travel
 - Favorites system
 - Shareable URL filters
