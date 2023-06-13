@@ -58,7 +58,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             cursor-pointer
           "
         >
-          JmuDev your home
+          +Tutor
         </div>
         <div 
         onClick={toggleOpen}
@@ -103,23 +103,23 @@ const UserMenu: React.FC<UserMenuProps> = ({
             {currentUser ? (
               <>
                 <MenuItem 
-                  label="My trips" 
+                  label="My tutors" 
                   onClick={() => router.push('/trips')}
                 />
                 <MenuItem 
-                  label="My favorites" 
+                  label="Favorite lessons" 
                   onClick={() => router.push('/favorites')}
                 />
                 <MenuItem 
-                  label="My reservations" 
+                  label="Reserved teachers" 
                   onClick={() => router.push('/reservations')}
                 />
                 <MenuItem 
-                  label="My properties" 
+                  label="My lessons" 
                   onClick={() => router.push('/properties')}
                 />
                 <MenuItem 
-                  label="JmuDev your home" 
+                  label="JmuDev" 
                   onClick={rentModal.onOpen}
                 />
                 <hr />

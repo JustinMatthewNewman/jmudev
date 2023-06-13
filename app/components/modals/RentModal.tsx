@@ -105,7 +105,7 @@ const RentModal = () => {
       rentModal.onClose();
     })
     .catch(() => {
-      toast.error('Something went wrong.');
+      toast.error('Something went wrong. Make sure to select a location!');
     })
     .finally(() => {
       setIsLoading(false);
@@ -131,7 +131,7 @@ const RentModal = () => {
   let bodyContent = (
     <div className="flex flex-col gap-8">
       <Heading
-        title="Which of these best describes your place?"
+        title="Which of these best describes your lesson?"
         subtitle="Pick a category"
       />
       <div 
@@ -163,8 +163,8 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Where is your place located?"
-          subtitle="Help guests find you!"
+          title="Where is your school located?"
+          subtitle="Help students find you!"
         />
         <CountrySelect 
           value={location} 
@@ -179,14 +179,14 @@ const RentModal = () => {
     bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
-          title="Share some basics about your place"
-          subtitle="What amenitis do you have?"
+          title="Share some basics about your lesson plan"
+          subtitle="What degrees and certifications do you have?"
         />
         <Counter 
           onChange={(value) => setCustomValue('guestCount', value)}
           value={guestCount}
-          title="Guests" 
-          subtitle="How many guests do you allow?"
+          title="students" 
+          subtitle="How many students do you allow?"
         />
         <hr />
         <Counter 
@@ -211,7 +211,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Add a photo of your place"
-          subtitle="Show guests what your place looks like!"
+          subtitle="Show students what your place looks like!"
         />
         <ImageUpload
           onChange={(value) => setCustomValue('imageSrc', value)}
@@ -254,7 +254,7 @@ const RentModal = () => {
       <div className="flex flex-col gap-8">
         <Heading
           title="Now, set your price"
-          subtitle="How much do you charge per night?"
+          subtitle="How much do you charge per hour?"
         />
         <Input
           id="price"
@@ -274,7 +274,7 @@ const RentModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={rentModal.isOpen}
-      title="JmuDev your home!"
+      title="JmuDev"
       actionLabel={actionLabel}
       onSubmit={handleSubmit(onSubmit)}
       secondaryActionLabel={secondaryActionLabel}
